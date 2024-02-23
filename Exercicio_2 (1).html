@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+    <script>
+        var fora = 0;
+        var intervalo_0 = 0;
+        var intervalo_25 =0;
+
+        for(var i = 0; i < 100; i++) {
+            if (i >= 0 && i <= 24) {
+                intervalo_0 = intervalo_0 + 1;
+            } else if (i >= 25 && i <= 50) {
+                intervalo_25 = intervalo_25 + 1;
+            } else {
+                     fora = fora + 1;
+                } 
+        }
+        document.write("Em um intervalo de 100 números nós possuimos: ");
+        document.write("<br>" + intervalo_0 + " números entre 0 e 24.");
+        document.write("<br>" + intervalo_25 + " números entre 25 e 50.");
+        document.write("<br> E " + fora + " números que estão fora dos 2 intervalos")
+    </script>
+</html>
